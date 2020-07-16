@@ -1,0 +1,112 @@
+Array methods
+
+
+splice
+
+let arr = ["I", "study", "JavaScript", "right", "now"];
+
+// remove 3 first elements and replace them with another
+arr.splice(0, 3, "Let's", "dance");
+
+alert( arr ) // now ["Let's", "dance", "right", "now"]
+
+
+
+slice
+
+let arr = ["t", "e", "s", "t"];
+
+alert( arr.slice(1, 3) ); // e,s (copy from 1 to 3)
+
+alert( arr.slice(-2) ); // s,t (copy from -2 till the end)
+
+
+concat
+
+let arr = [1, 2];
+
+// create an array from: arr and [3,4]
+alert( arr.concat([3, 4]) ); // 1,2,3,4
+
+// create an array from: arr and [3,4] and [5,6]
+alert( arr.concat([3, 4], [5, 6]) ); // 1,2,3,4,5,6
+
+
+Iterate: forEach
+
+// for each element call alert
+["Bilbo", "Gandalf", "Nazgul"].forEach(alert);
+
+
+find and findIndex
+
+let users = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mary"}
+];
+
+let user = users.find(item => item.id == 1);
+
+alert(user.name); // John
+
+
+map
+
+let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+alert(lengths); // 5,7,6
+
+sort(fn)
+changing its element order.
+
+let arr = [ 1, 2, 15 ];
+
+// the method reorders the content of arr
+arr.sort();
+
+alert( arr );  // 1, 15, 2
+
+
+string methods are almost similar to the array methods.
+
+String Length
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+
+Finding a String in a String
+indexOf() 
+var str = "Please locate where 'locate' occurs!";
+var pos = str.lastIndexOf("locate");
+
+The slice() Method
+slice() extracts a part of a string and returns the extracted part in a new string.
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7, 13);
+
+
+Replacing String Content
+The replace() method replaces a specified value with another value in a string:
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var txt = str.replace("Microsoft","LetsUpgrade");
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+
+
+String.trim()
+The trim() method removes whitespace from both sides of a string:
+<script>
+function myFunction() {
+  var str = "     Hello World!     ";
+  alert(str.trim());
+}
+</script>
+
+
+The charAt() Method
+The charAt() method returns the character at a specified index (position) in a string:
+The charAt() Method
+The charAt() method returns the character at a specified index (position) in a string:
